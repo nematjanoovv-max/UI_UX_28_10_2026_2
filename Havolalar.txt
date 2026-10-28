@@ -35,11 +35,16 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://nova-2810.vercel.app
    Figma  : https://www.figma.com/file/L2f6Ex8oLNYwqS5R7IY9C2/Nova
 
+5) Zero Design — UI kit / dizayn tizimi
+   Papka  : 05_zero_design
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/05_zero_design
+   Sayt   : https://zero-design-2810.vercel.app
+   Figma  : https://www.figma.com/file/B40CJceRjgB0PNo9F08ggO/Zero-Design
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-5)  Zero Design — dizayn agentligi
 6)  Roger Haus — foto/portfolio
 7)  Rayal Park — mehmonxona
 8)  Finsweet Agency — agentlik
