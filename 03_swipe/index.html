@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swipe — Finance that keeps up with your business</title>
+<meta name="description" content="Swipe brings payments, invoicing and spend control into one friendly app for small businesses. Start free, no credit card required.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235b4bff'/%3E%3Cpath d='M8 11h16M8 16h11M8 21h16' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+  <symbol id="s-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="s-up" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+  <symbol id="s-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="s-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20M6 15h4"/></symbol>
+  <symbol id="s-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="s-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+  <symbol id="s-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="s-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0112 0M16 5a3 3 0 010 6M18 20a6 6 0 00-3-5"/></symbol>
+  <symbol id="s-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="s-star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/></symbol>
+  <symbol id="s-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="s-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="s-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="s-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="s-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4"/></symbol>
+  <symbol id="s-x" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></symbol>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Swipe home">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span>swipe</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#team">Team</a>
+      <a href="#press">Resources</a>
+    </nav>
+    <div class="header-actions">
+      <a class="login" href="#contact">Log in</a>
+      <a class="btn btn-sm" href="#contact">Get started <svg><use href="#s-arrow"/></svg></a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg><use href="#s-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <span class="hero-glow" aria-hidden="true"></span>
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><i aria-hidden="true"></i> Built for small businesses</span>
+        <h1>Accessible way to start <em>your business</em></h1>
+        <p>Payments, invoices and spend control in one friendly app. Swipe does the admin so you can do the work you actually love.</p>
+        <form class="signup" id="heroForm" novalidate>
+          <label class="sr-only" for="heroEmail">Work email</label>
+          <div class="signup-row">
+            <svg><use href="#s-mail"/></svg>
+            <input id="heroEmail" type="email" placeholder="Enter your work email" autocomplete="email">
+            <button class="btn" type="submit">Get started free <svg><use href="#s-arrow"/></svg></button>
+          </div>
+        </form>
+        <p class="signup-note" id="heroStatus">Free 14-day trial · No credit card required</p>
+        <div class="hero-trust">
+          <div class="faces"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=80&amp;h=80&amp;q=70" alt="" width="34" height="34"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=80&amp;h=80&amp;q=70" alt="" width="34" height="34"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=80&amp;h=80&amp;q=70" alt="" width="34" height="34"></div>
+          <p><strong>10,000+ teams</strong> already run their money on Swipe</p>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="hero-canvas">
+          <span class="canvas-dots" aria-hidden="true"></span>
+          <div class="coil" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="float-card pay-card"><span class="fc-ico"><svg><use href="#s-bolt"/></svg></span><div><small>Payment received</small><strong>+$2,480.00</strong><span class="fc-meta">Northwind Studio · just now</span></div><span class="fc-check"><svg><use href="#s-check"/></svg></span></div>
+          <div class="float-card report-card"><div class="fc-head"><span>Weekly report</span><span class="fc-dot"></span></div><div class="bars"><i style="height:34%"></i><i style="height:52%"></i><i style="height:41%"></i><i style="height:72%"></i><i style="height:58%"></i><i style="height:90%"></i><i style="height:64%"></i></div><div class="fc-foot"><strong>+18.4%</strong><span>vs last week</span></div></div>
+          <span class="floating-pill">No card fees</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Swipe in numbers">
+    <div class="container stats-grid reveal">
+      <div><strong>10,000<span>+</span></strong><small>businesses onboard</small></div>
+      <div><strong>20<span>+</span></strong><small>countries supported</small></div>
+      <div><strong>$5M<span>+</span></strong><small>processed every month</small></div>
+      <div><strong>4.9<span>/5</span></strong><small>average customer rating</small></div>
+    </div>
+  </section>
+
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="kicker"><i aria-hidden="true"></i> Everything in one place</span>
+        <h2>Get to know our<br>main features</h2>
+        <p>Fewer tabs, fewer spreadsheets, fewer surprises. Swipe covers the money side of running a business — clearly.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-top blue"><span class="feature-ico"><svg><use href="#s-card"/></svg></span><span class="num">01</span></div>
+          <h3>Invoicing in seconds</h3>
+          <p>Build a branded invoice, add a payment link and get paid — from your phone or laptop.</p>
+          <ul><li><svg><use href="#s-check"/></svg> Recurring invoices</li><li><svg><use href="#s-check"/></svg> Auto payment reminders</li><li><svg><use href="#s-check"/></svg> Multi-currency support</li></ul>
+          <a class="link-arrow" href="#pricing">Explore invoicing <svg><use href="#s-up"/></svg></a>
+        </article>
+        <article class="feature-card featured reveal delay-1">
+          <div class="feature-top purple"><span class="feature-ico"><svg><use href="#s-bolt"/></svg></span><span class="num">02</span></div>
+          <h3>Instant payouts</h3>
+          <p>Money lands the moment a client pays. No waiting three days, no hidden transfer fees.</p>
+          <ul><li><svg><use href="#s-check"/></svg> Same-day settlements</li><li><svg><use href="#s-check"/></svg> 20+ currencies</li><li><svg><use href="#s-check"/></svg> Transparent 0.9% fee</li></ul>
+          <a class="link-arrow light" href="#pricing">Explore payouts <svg><use href="#s-up"/></svg></a>
+        </article>
+        <article class="feature-card reveal delay-2">
+          <div class="feature-top yellow"><span class="feature-ico"><svg><use href="#s-shield"/></svg></span><span class="num">03</span></div>
+          <h3>Smart spend control</h3>
+          <p>Issue cards with limits, see every subscription and stop paying for tools nobody opens.</p>
+          <ul><li><svg><use href="#s-check"/></svg> Per-team card limits</li><li><svg><use href="#s-check"/></svg> Subscription alerts</li><li><svg><use href="#s-check"/></svg> One-click receipts</li></ul>
+          <a class="link-arrow" href="#pricing">Explore cards <svg><use href="#s-up"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo-band">
+    <div class="container">
+      <div class="photo-copy reveal"><span class="kicker"><i aria-hidden="true"></i> Made for real teams</span><h2>A finance stack that<br>feels human</h2></div>
+      <div class="photo-wrap reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="A small team collaborating around a table" width="1600" height="900" loading="lazy">
+        <div class="photo-badge"><span class="photo-ico"><svg><use href="#s-users"/></svg></span><div><strong>Built with 400+ founders</strong><small>Every feature starts as a customer request.</small></div></div>
+        <div class="photo-quote"><svg class="qmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6H4v6h5v6H4M20 6h-5v6h5v6h-5" fill="none" stroke="currentColor" stroke-width="2"/></svg><p>“We finally know where every dollar goes — without a monthly finance meeting.”</p><small>Jonas Reed, founder at Fieldwork</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section setup">
+    <div class="container setup-grid">
+      <div class="setup-copy reveal">
+        <span class="kicker"><i aria-hidden="true"></i> Zero friction</span>
+        <h2>No credit card<br>required</h2>
+        <p>Open your account in under four minutes. Connect your bank, invite the team and send your first invoice before your coffee gets cold.</p>
+        <ul class="setup-list">
+          <li><span><svg><use href="#s-clock"/></svg></span><div><h3>4-minute setup</h3><p>Guided onboarding, no paperwork, no sales call.</p></div></li>
+          <li><span><svg><use href="#s-shield"/></svg></span><div><h3>Bank-level security</h3><p>256-bit encryption, SOC 2 and 3D Secure payments.</p></div></li>
+          <li><span><svg><use href="#s-users"/></svg></span><div><h3>Free for your whole team</h3><p>Invite unlimited viewers on every plan.</p></div></li>
+        </ul>
+        <a class="btn" href="#contact">Create free account <svg><use href="#s-arrow"/></svg></a>
+      </div>
+      <div class="setup-visual reveal delay-1">
+        <span class="egg egg-a" aria-hidden="true"></span>
+        <span class="egg egg-b" aria-hidden="true"></span>
+        <span class="egg egg-c" aria-hidden="true"></span>
+        <div class="app-card">
+          <div class="app-head"><div><small>Total balance</small><strong>$84,210.50</strong></div><span class="app-badge">+12.6%</span></div>
+          <div class="app-actions"><span><svg><use href="#s-arrow"/></svg>Send</span><span><svg><use href="#s-arrow"/></svg>Request</span><span><svg><use href="#s-card"/></svg>Cards</span></div>
+          <div class="app-chart" aria-hidden="true">
+            <svg viewBox="0 0 320 110" preserveAspectRatio="none"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b4bff" stop-opacity=".28"/><stop offset="1" stop-color="#5b4bff" stop-opacity="0"/></linearGradient></defs><path d="M0 88C28 82 40 66 62 70s34 18 56 8 30-40 54-42 30 22 52 16 32-30 52-34 26 10 44 6V110H0z" fill="url(#area)" stroke="none"/><path d="M0 88C28 82 40 66 62 70s34 18 56 8 30-40 54-42 30 22 52 16 32-30 52-34 26 10 44 6" fill="none" stroke="#5b4bff" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <div class="app-list">
+            <div><span class="app-ico figma">F</span><div><strong>Figma</strong><small>Software · Today</small></div><span class="app-amount">−$45.00</span></div>
+            <div><span class="app-ico mint">N</span><div><strong>Northwind Studio</strong><small>Invoice #1042 · Today</small></div><span class="app-amount plus">+$2,480.00</span></div>
+            <div><span class="app-ico orange">S</span><div><strong>Stripe payout</strong><small>Transfer · Yesterday</small></div><span class="app-amount plus">+$920.40</span></div>
+          </div>
+        </div>
+        <div class="setup-note"><span class="note-ico"><svg><use href="#s-check"/></svg></span><div><strong>You're all set!</strong><small>Your account is ready to send money.</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing" id="pricing">
+    <span class="pricing-shape lime" aria-hidden="true"></span>
+    <span class="pricing-shape pink" aria-hidden="true"></span>
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="kicker"><i aria-hidden="true"></i> Simple pricing</span>
+        <h2>Plans that grow<br>when you do</h2>
+        <p>Start free for 14 days. Then pick a plan — change or cancel whenever, no awkward phone calls.</p>
+        <div class="billing-toggle" role="group" aria-label="Billing period">
+          <button class="active" data-period="monthly" aria-pressed="true">Monthly</button>
+          <button data-period="yearly" aria-pressed="false">Yearly <span>−20%</span></button>
+        </div>
+      </div>
+      <div class="price-grid">
+        <article class="price-card reveal">
+          <div class="price-head"><span class="plan-ico"><svg><use href="#s-bolt"/></svg></span><div><h3>Starter</h3><p>For solo founders finding their feet.</p></div></div>
+          <div class="price"><span>$</span><strong data-monthly="20" data-yearly="16">20</strong><small>/ month</small></div>
+          <p class="price-note">Billed monthly. Cancel anytime.</p>
+          <a class="btn btn-ghost" href="#contact">Choose Starter <svg><use href="#s-arrow"/></svg></a>
+          <ul class="price-list">
+            <li><svg><use href="#s-check"/></svg> 3 team members</li>
+            <li><svg><use href="#s-check"/></svg> 50 invoices per month</li>
+            <li><svg><use href="#s-check"/></svg> Basic cash-flow reports</li>
+            <li><svg><use href="#s-check"/></svg> Email support</li>
+          </ul>
+        </article>
+        <article class="price-card popular reveal delay-1">
+          <span class="popular-tag">Most popular</span>
+          <div class="price-head"><span class="plan-ico purple"><svg><use href="#s-chart"/></svg></span><div><h3>Growth</h3><p>For teams ready to move faster.</p></div></div>
+          <div class="price"><span>$</span><strong data-monthly="29" data-yearly="23">29</strong><small>/ month</small></div>
+          <p class="price-note">Billed monthly. Cancel anytime.</p>
+          <a class="btn" href="#contact">Choose Growth <svg><use href="#s-arrow"/></svg></a>
+          <ul class="price-list">
+            <li><svg><use href="#s-check"/></svg> Unlimited team members</li>
+            <li><svg><use href="#s-check"/></svg> Unlimited invoices &amp; quotes</li>
+            <li><svg><use href="#s-check"/></svg> Spend cards with limits</li>
+            <li><svg><use href="#s-check"/></svg> Priority human support</li>
+          </ul>
+        </article>
+      </div>
+      <p class="price-foot reveal">All plans include bank-level security, 20+ currencies and free read-only seats. <a href="#contact">Need something bigger? Talk to us.</a></p>
+    </div>
+  </section>
+
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div><span class="kicker"><i aria-hidden="true"></i> Meet the network</span><h2>Select the team<br>you want to join</h2></div>
+        <p class="head-note">Swipe is built with a network of studios, agencies and independent operators. Pick a team to see how they use it.</p>
+      </div>
+      <div class="team-grid" id="teamGrid">
+        <button class="team-card" data-team="Northwind Studio" aria-pressed="false"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Maria Chen" width="120" height="120" loading="lazy"><strong>Maria Chen</strong><small>COO · Northwind</small><span class="team-tick"><svg><use href="#s-check"/></svg></span></button>
+        <button class="team-card" data-team="Fieldwork" aria-pressed="false"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Jonas Reed" width="120" height="120" loading="lazy"><strong>Jonas Reed</strong><small>Founder · Fieldwork</small><span class="team-tick"><svg><use href="#s-check"/></svg></span></button>
+        <button class="team-card" data-team="Bloom & Co" aria-pressed="false"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Amara Osei" width="120" height="120" loading="lazy"><strong>Amara Osei</strong><small>Design lead · Bloom</small><span class="team-tick"><svg><use href="#s-check"/></svg></button>
+        <button class="team-card" data-team="Kite Labs" aria-pressed="false"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Luca Moretti" width="120" height="120" loading="lazy"><strong>Luca Moretti</strong><small>CTO · Kite Labs</small><span class="team-tick"><svg><use href="#s-check"/></svg></span></button>
+        <button class="team-card" data-team="Hearth" aria-pressed="false"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Priya Shah" width="120" height="120" loading="lazy"><strong>Priya Shah</strong><small>Ops · Hearth</small><span class="team-tick"><svg><use href="#s-check"/></svg></span></button>
+        <button class="team-card" data-team="Alder" aria-pressed="false"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Theo Blake" width="120" height="120" loading="lazy"><strong>Theo Blake</strong><small>Founder · Alder</small><span class="team-tick"><svg><use href="#s-check"/></svg></span></button>
+        <button class="team-card" data-team="Orbit" aria-pressed="false"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Marcus Hale" width="120" height="120" loading="lazy"><strong>Marcus Hale</strong><small>Finance · Orbit</small><span class="team-tick"><svg><use href="#s-check"/></svg></span></button>
+        <button class="team-card" data-team="Sundae" aria-pressed="false"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&amp;fit=crop&amp;w=200&amp;h=200&amp;q=75" alt="Portrait of Elin Novak" width="120" height="120" loading="lazy"><strong>Elin Novak</strong><small>Studio lead · Sundae</small><span class="team-tick"><svg><use href="#s-check"/></svg></span></button>
+      </div>
+      <p class="team-status" id="teamStatus" role="status">Select a teammate to preview their Swipe workspace.</p>
+    </div>
+  </section>
+
+  <section class="integrations">
+    <div class="container integrations-grid reveal">
+      <div><span class="kicker"><i aria-hidden="true"></i> Integrations</span><h2>Plays nicely with<br>your tools</h2></div>
+      <div class="logo-cloud" aria-label="Integration partners">
+        <span><i class="lg lg-stripe">S</i>Stripe</span><span><i class="lg lg-slack">#</i>Slack</span><span><i class="lg lg-notion">N</i>Notion</span><span><i class="lg lg-xero">X</i>Xero</span><span><i class="lg lg-qb">Q</i>QuickBooks</span><span><i class="lg lg-zap">⚡</i>Zapier</span><span><i class="lg lg-gmail">M</i>Gmail</span><span><i class="lg lg-figma">F</i>Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonial">
+    <div class="container testimonial-grid">
+      <div class="testimonial-art reveal" aria-hidden="true">
+        <span class="pyramid"><i></i></span>
+        <span class="art-dot"></span>
+        <span class="art-ring"></span>
+      </div>
+      <div class="testimonial-copy reveal delay-1">
+        <span class="kicker"><i aria-hidden="true"></i> People talk about us</span>
+        <blockquote>“Swipe replaced four tools and a very tired spreadsheet. We closed our books in a day and finally stopped guessing our runway.”</blockquote>
+        <div class="testimonial-person"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=75" alt="" width="48" height="48" loading="lazy"><div><strong>Maria Chen</strong><small>COO at Northwind Studio</small></div><div class="stars" aria-label="5 out of 5 stars"><svg><use href="#s-star"/></svg><svg><use href="#s-star"/></svg><svg><use href="#s-star"/></svg><svg><use href="#s-star"/></svg><svg><use href="#s-star"/></svg></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section press" id="press">
+    <div class="container">
+      <div class="section-head split reveal"><div><span class="kicker"><i aria-hidden="true"></i> In the press</span><h2>What the world<br>is saying</h2></div><a class="link-arrow" href="#contact">Media kit <svg><use href="#s-up"/></svg></a></div>
+      <div class="press-grid">
+        <article class="press-card reveal"><a class="press-img" href="#press"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&amp;fit=crop&amp;w=900&amp;q=78" alt="Founder working on a laptop" width="900" height="600" loading="lazy"><span class="press-tag">TechCrunch</span></a><div class="press-body"><small>12 October 2026 · 4 min read</small><h3><a href="#press">Swipe raises $24M to make business banking feel effortless</a></h3><p>The round will fund new spend tools and a push into Southeast Asia.</p></div></article>
+        <article class="press-card reveal delay-1"><a class="press-img" href="#press"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=900&amp;q=78" alt="Team celebrating in an office" width="900" height="600" loading="lazy"><span class="press-tag">Forbes</span></a><div class="press-body"><small>28 September 2026 · 6 min read</small><h3><a href="#press">Why the next wave of fintech is small, friendly and boring</a></h3><p>Forget flashy cards. Founders want tools that just work on a Tuesday.</p></div></article>
+        <article class="press-card reveal delay-2"><a class="press-img" href="#press"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&amp;fit=crop&amp;w=900&amp;q=78" alt="People working together at a table" width="900" height="600" loading="lazy"><span class="press-tag">The Verge</span></a><div class="press-body"><small>16 September 2026 · 3 min read</small><h3><a href="#press">Swipe's new cards put a human limit on team spending</a></h3><p>Per-project budgets and subscription alerts arrive in the latest update.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal">
+        <span class="kicker light"><i aria-hidden="true"></i> Let's talk numbers</span>
+        <h2>Ready to make<br>money simpler?</h2>
+        <p>Tell us a little about your business and we will set you up with the right plan. A real person replies within one working day.</p>
+        <ul class="contact-points">
+          <li><svg><use href="#s-check"/></svg> Free 14-day trial</li>
+          <li><svg><use href="#s-check"/></svg> No credit card required</li>
+          <li><svg><use href="#s-check"/></svg> Cancel in two clicks</li>
+        </ul>
+        <a class="contact-mail" href="mailto:hello@swipe.app"><svg><use href="#s-mail"/></svg> hello@swipe.app</a>
+      </div>
+      <form class="contact-form reveal delay-1" id="contactForm" novalidate>
+        <div class="field-row">
+          <label>First name<input type="text" name="firstName" autocomplete="given-name" placeholder="Maria" required></label>
+          <label>Last name<input type="text" name="lastName" autocomplete="family-name" placeholder="Chen" required></label>
+        </div>
+        <label>Work email<input type="email" name="email" autocomplete="email" placeholder="maria@company.com" required></label>
+        <label>Company size<select name="size" required><option value="">Choose a size</option><option>Just me</option><option>2–10 people</option><option>11–50 people</option><option>51+ people</option></select></label>
+        <label>What are you hoping to fix?<textarea name="message" rows="4" placeholder="Invoices, payouts, spend cards…"></textarea></label>
+        <button class="btn btn-wide" type="submit">Request a demo <svg><use href="#s-arrow"/></svg></button>
+        <p class="form-status" id="contactStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i></span><span>swipe</span></a>
+      <p>The friendliest finance stack for small businesses. Built in Amsterdam, used everywhere.</p>
+      <div class="socials"><a href="#top" aria-label="Instagram"><svg><use href="#s-instagram"/></svg></a><a href="#top" aria-label="LinkedIn"><svg><use href="#s-linkedin"/></svg></a><a href="#top" aria-label="X"><svg><use href="#s-x"/></svg></a></div>
+    </div>
+    <div class="footer-col"><h3>Product</h3><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#team">Team network</a><a href="#contact">Get started</a></div>
+    <div class="footer-col"><h3>Company</h3><a href="#top">About</a><a href="#press">Press</a><a href="#contact">Careers</a><a href="#contact">Contact</a></div>
+    <div class="footer-col"><h3>Legal</h3><a href="#top">Privacy</a><a href="#top">Terms</a><a href="#top">Security</a><a href="#top">Cookies</a></div>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 Swipe Financial B.V. All rights reserved.</p><div class="footer-badges"><span>🔒 SOC 2 Type II</span><span>🇪🇺 PSD2 licensed</span></div></div>
+  <div class="footer-coil" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
