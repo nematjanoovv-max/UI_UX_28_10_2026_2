@@ -17,11 +17,16 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://cleaning-x-2810.vercel.app
    Figma  : https://www.figma.com/file/Kdy7qTpYyWzvwBIuSGulqt/Cleaning-X
 
+2) GreenShop — o'simliklar do'koni
+   Papka  : 02_greenshop
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/02_greenshop
+   Sayt   : https://greenshop-2810.vercel.app
+   Figma  : https://www.figma.com/file/BeJ7F91dnIOSwVdvcRwMqn/GreenShop-(Copy)
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-2)  GreenShop — o'simliklar do'koni
 3)  Swipe — mobil ilova / fintech
 4)  Nova — arxitektura studiyasi
 5)  Zero Design — dizayn agentligi
