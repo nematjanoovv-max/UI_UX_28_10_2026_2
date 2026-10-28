@@ -29,11 +29,16 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://swipe-2810.vercel.app
    Figma  : https://www.figma.com/file/RKq2ORzZcFhfG7g9NYuWhk/Swipe
 
+4) Nova — arxitektura studiyasi
+   Papka  : 04_nova
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/04_nova
+   Sayt   : https://nova-2810.vercel.app
+   Figma  : https://www.figma.com/file/L2f6Ex8oLNYwqS5R7IY9C2/Nova
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-4)  Nova — arxitektura studiyasi
 5)  Zero Design — dizayn agentligi
 6)  Roger Haus — foto/portfolio
 7)  Rayal Park — mehmonxona
