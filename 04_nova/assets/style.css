@@ -59,7 +59,7 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke
 .scroll-hint svg{width:13px;height:13px}
 .hero-media{position:relative;border-top:1px solid var(--line)}
 .hero-media img{width:100%;height:620px;object-fit:cover;filter:saturate(.9) contrast(1.02)}
-.hero-caption{display:flex;align-items:center;gap:14px;padding:12px 0;font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+.hero-caption{display:flex;align-items:center;gap:14px;padding:12px 28px;font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
 .cap-dot{width:4px;height:4px;border-radius:50%;background:var(--accent)}
 
 /* manifesto */
@@ -222,10 +222,10 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke
   .nav.open{top:68px;left:16px;right:16px}
   .brand-main{font-size:22px}
   .intro{padding-top:30px}
-  .intro h1{font-size:clamp(58px,18vw,100px)}
+  .intro h1{font-size:clamp(44px,14vw,82px);letter-spacing:-.06em}
   .intro-meta>p{font-size:12.5px;margin-bottom:16px}
   .hero-media img{height:340px}
-  .hero-caption{flex-wrap:wrap;gap:8px 10px;font-size:8.5px}
+  .hero-caption{flex-wrap:wrap;gap:8px 10px;font-size:8.5px;padding:10px 16px}
   .manifesto{padding:64px 0 72px}
   .manifesto-grid{padding:24px 0 30px}
   .manifesto h2{font-size:clamp(38px,11vw,58px)}
