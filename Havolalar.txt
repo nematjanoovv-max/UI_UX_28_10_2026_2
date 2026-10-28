@@ -1,0 +1,14 @@
+==================================================================
+  UI/UX 28.10.2026 — 17 TA FIGMA SAYT
+  Lokal papka : /sdcard/Agent/UI_UX_28_10_2026_2/
+  GitHub repo : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2
+==================================================================
+
+Har bir sayt alohida Vercel loyihasi. Vercel GitHub repoga ulangan:
+main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
+
+------------------------------------------------------------------
+  SAYTLAR
+------------------------------------------------------------------
+
+(1-17 saytlar tayyorlanmoqda...)
