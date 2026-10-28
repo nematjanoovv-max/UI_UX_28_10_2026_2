@@ -4,11 +4,43 @@
   GitHub repo : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2
 ==================================================================
 
-Har bir sayt alohida Vercel loyihasi. Vercel GitHub repoga ulangan:
+Har bir sayt — alohida Vercel loyihasi. Vercel shu GitHub repoga ulangan:
 main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
 
 ------------------------------------------------------------------
-  SAYTLAR
+  TAYYOR SAYTLAR
 ------------------------------------------------------------------
 
-(1-17 saytlar tayyorlanmoqda...)
+1) Cleaning X — uy tozalash xizmati
+   Papka  : 01_cleaning_x
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/01_cleaning_x
+   Sayt   : https://cleaning-x-2810.vercel.app
+   Figma  : https://www.figma.com/file/Kdy7qTpYyWzvwBIuSGulqt/Cleaning-X
+
+------------------------------------------------------------------
+  NAVBATDAGI SAYTLAR
+------------------------------------------------------------------
+
+2)  GreenShop — o'simliklar do'koni
+3)  Swipe — mobil ilova / fintech
+4)  Nova — arxitektura studiyasi
+5)  Zero Design — dizayn agentligi
+6)  Roger Haus — foto/portfolio
+7)  Rayal Park — mehmonxona
+8)  Finsweet Agency — agentlik
+9)  Organick — organik oziq-ovqat
+10) Bank Hotel — lyuks mehmonxona
+11) Beautyness — go'zallik saloni
+12) Crisp — SaaS platforma
+13) Dlex — mobil UI kit
+14) Misterbyt — portfolio
+15) UMS-F — universitet tizimi
+16) PrimeCRM — CRM platforma
+17) Landing Page Kits — landing to'plami
+
+------------------------------------------------------------------
+  TEXNIK IZOH
+------------------------------------------------------------------
+- Har bir sayt: HTML + CSS + JavaScript (statik, build talab qilmaydi).
+- Lokal ko'rish: shu papkada `python3 -m http.server 8000`.
+- Saytlar ro'yxati va holati shu faylda yangilanadi.
