@@ -53,11 +53,16 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://rayal-park-2810.vercel.app
    Figma  : https://www.figma.com/file/jU6hE2yFj26oArs231Ud0d/Rayal-Park
 
+8) Finsweet Agency — agentlik
+   Papka  : 08_finsweet
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/08_finsweet
+   Sayt   : https://finsweet-2810.vercel.app
+   Figma  : https://www.figma.com/file/JF1wS8Bw0GQUovvsPrnXSd/Finsweet-Agency
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-8)  Finsweet Agency — agentlik
 9)  Organick — organik oziq-ovqat
 10) Bank Hotel — lyuks mehmonxona
 11) Beautyness — go'zallik saloni
