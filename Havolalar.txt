@@ -59,11 +59,16 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://finsweet-2810.vercel.app
    Figma  : https://www.figma.com/file/JF1wS8Bw0GQUovvsPrnXSd/Finsweet-Agency
 
+9) Organick — organik oziq-ovqat
+   Papka  : 09_organick
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/09_organick
+   Sayt   : https://organick-2810.vercel.app
+   Figma  : https://www.figma.com/file/SKwG2RDjz3fWi9dq74I8zo/Organick
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-9)  Organick — organik oziq-ovqat
 10) Bank Hotel — lyuks mehmonxona
 11) Beautyness — go'zallik saloni
 12) Crisp — SaaS platforma
