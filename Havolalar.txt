@@ -65,10 +65,6 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://organick-2810.vercel.app
    Figma  : https://www.figma.com/file/SKwG2RDjz3fWi9dq74I8zo/Organick
 
-------------------------------------------------------------------
-  NAVBATDAGI SAYTLAR
-------------------------------------------------------------------
-
 10) Bank Hotel — lyuks mehmonxona
    Papka  : 10_bank_hotel
    GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/10_bank_hotel
