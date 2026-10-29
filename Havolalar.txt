@@ -71,11 +71,16 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://bank-hotel-2810.vercel.app
    Figma  : https://www.figma.com/file/1SK5lQXbXfy8hXnJTn3yEk/Bank-Hotel
 
+11) Beautyness — go'zallik saloni
+   Papka  : 11_beautyness
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/11_beautyness
+   Sayt   : https://beautyness-2810.vercel.app
+   Figma  : https://www.figma.com/file/sTIUeZ2TNdOwQXdwUGKjNb/Beautyness
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-11) Beautyness — go'zallik saloni
 12) Crisp — SaaS platforma
 13) Dlex — mobil UI kit
 14) Misterbyt — portfolio
