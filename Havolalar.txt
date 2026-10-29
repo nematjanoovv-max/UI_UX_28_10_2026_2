@@ -41,12 +41,22 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://zero-design-2810.vercel.app
    Figma  : https://www.figma.com/file/B40CJceRjgB0PNo9F08ggO/Zero-Design
 
+6) Roger Haus — foto/portfolio
+   Papka  : 06_roger_haus
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/06_roger_haus
+   Sayt   : https://roger-haus-2810.vercel.app
+   Figma  : https://www.figma.com/file/OPWShg4RkQ8vZRclaKpegG/Roger-Haus
+
+7) Rayal Park — mehmonxona
+   Papka  : 07_rayal_park
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/07_rayal_park
+   Sayt   : https://rayal-park-2810.vercel.app
+   Figma  : https://www.figma.com/file/jU6hE2yFj26oArs231Ud0d/Rayal-Park
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-6)  Roger Haus — foto/portfolio
-7)  Rayal Park — mehmonxona
 8)  Finsweet Agency — agentlik
 9)  Organick — organik oziq-ovqat
 10) Bank Hotel — lyuks mehmonxona
