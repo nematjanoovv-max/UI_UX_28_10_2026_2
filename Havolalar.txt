@@ -70,6 +70,15 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
 ------------------------------------------------------------------
 
 10) Bank Hotel — lyuks mehmonxona
+   Papka  : 10_bank_hotel
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/10_bank_hotel
+   Sayt   : https://bank-hotel-2810.vercel.app
+   Figma  : https://www.figma.com/file/1SK5lQXbXfy8hXnJTn3yEk/Bank-Hotel
+
+------------------------------------------------------------------
+  NAVBATDAGI SAYTLAR
+------------------------------------------------------------------
+
 11) Beautyness — go'zallik saloni
 12) Crisp — SaaS platforma
 13) Dlex — mobil UI kit
