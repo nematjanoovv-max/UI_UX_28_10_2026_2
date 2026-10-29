@@ -77,11 +77,16 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://beautyness-2810.vercel.app
    Figma  : https://www.figma.com/file/sTIUeZ2TNdOwQXdwUGKjNb/Beautyness
 
+12) Crisp — moda do'koni
+   Papka  : 12_crisp
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/12_crisp
+   Sayt   : https://crisp-2810.vercel.app
+   Figma  : https://www.figma.com/file/pyriaNMaPDrvmzSicUinkm/Crisp
+
 ------------------------------------------------------------------
   NAVBATDAGI SAYTLAR
 ------------------------------------------------------------------
 
-12) Crisp — SaaS platforma
 13) Dlex — mobil UI kit
 14) Misterbyt — portfolio
 15) UMS-F — universitet tizimi
