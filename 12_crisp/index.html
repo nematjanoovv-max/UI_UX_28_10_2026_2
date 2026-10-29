@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crisp — Fashion, made easy</title>
+<meta name="description" content="Crisp is an independent fashion label in Amsterdam. Considered pieces, small runs and free shipping on orders over €75.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121212'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='14' font-weight='bold' text-anchor='middle' fill='%23f7f4ee'%3EC%3C/text%3E%3Ccircle cx='25' cy='9' r='3' fill='%23cf3b2f'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 7h14l-1 14H6L5 7zM9 7V5a3 3 0 016 0v2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5.2-8-11a4.4 4.4 0 018-2.6A4.4 4.4 0 0120 9c0 5.8-8 11-8 11z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.7 6.3.8-4.6 4.4 1.2 6.1-5.6-3-5.6 3 1.2-6.1L3 9.5l6.3-.8z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 4v10a4 4 0 11-4-4M14 4c1 2 2.5 3 5 3"/></symbol>
+  <symbol id="i-pinterest" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 20l2-8M9.5 10.5c0-2 1.5-3.5 3.5-3.5s3 1.2 3 3c0 2.2-1.2 4-2.8 4-1 0-1.7-.8-1.5-1.8"/></symbol>
+</svg>
+
+<div class="announce"><p>Free shipping over €75 · New drop every Friday · Amsterdam</p></div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="Crisp home">CRISP<span class="logo-dot"></span></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#new">New in</a>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#journal">Journal</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search" aria-expanded="false" aria-controls="searchBar"><svg><use href="#i-search"/></svg></button>
+      <a class="icon-btn" href="#newsletter" aria-label="Newsletter and account"><svg><use href="#i-user"/></svg></a>
+      <button class="icon-btn bag-btn" id="bagBtn" aria-label="Shopping bag, 0 items"><svg><use href="#i-bag"/></svg><span class="bag-count" id="bagCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar" aria-hidden="true">
+    <form class="container search-form" id="searchForm" role="search">
+      <label class="sr-only" for="searchInput">Search products</label>
+      <input id="searchInput" type="search" placeholder="Search coats, dresses, denim…">
+      <button class="btn btn-sm" type="submit">Search</button>
+      <p class="search-status" id="searchStatus" role="status"></p>
+    </form>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Spring / Summer 2026</span>
+        <h1>The summer <em>edit.</em></h1>
+        <p>Considered pieces for long days and late trains. Made in small runs, in fabrics that get better with wear.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#new">Shop the edit <svg><use href="#i-arrow"/></svg></a>
+          <a class="text-link" href="#collections">Explore collections</a>
+        </div>
+        <div class="hero-foot">
+          <span class="stars" aria-label="4.8 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span>
+          <span>4.8 · 1,900 happy customers</span>
+        </div>
+      </div>
+      <div class="hero-media reveal delay-1">
+        <span class="hero-panel" aria-hidden="true"></span>
+        <figure class="hero-main"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="A model in a blue trench coat in Milan" width="1000" height="1300"></figure>
+        <figure class="hero-small"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=700&amp;q=78" alt="A model in a floral dress by the sea" width="700" height="900" loading="lazy"></figure>
+        <span class="hero-tag">New<br>arrivals</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Free shipping over €75</span><span>·</span><span>Small runs, no waste</span><span>·</span><span>New drop every Friday</span><span>·</span><span>Free returns within 30 days</span><span>·</span>
+      <span>Free shipping over €75</span><span>·</span><span>Small runs, no waste</span><span>·</span><span>New drop every Friday</span><span>·</span><span>Free returns within 30 days</span><span>·</span>
+    </div>
+  </div>
+
+  <section class="categories section" id="collections">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div><span class="eyebrow">Shop by category</span><h2>Find your <em>uniform.</em></h2></div>
+        <a class="text-link" href="#shop">All categories <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-card reveal" href="#shop">
+          <span class="cat-img"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A floral dress in the sun" width="800" height="1000" loading="lazy"></span>
+          <span class="cat-label"><strong>Dresses</strong><span>24 pieces</span></span>
+        </a>
+        <a class="cat-card reveal delay-1" href="#shop">
+          <span class="cat-img"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A blue trench coat" width="800" height="1000" loading="lazy"></span>
+          <span class="cat-label"><strong>Outerwear</strong><span>18 pieces</span></span>
+        </a>
+        <a class="cat-card reveal delay-2" href="#shop">
+          <span class="cat-img"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A black graphic tee" width="800" height="1000" loading="lazy"></span>
+          <span class="cat-label"><strong>Tops</strong><span>32 pieces</span></span>
+        </a>
+        <a class="cat-card reveal delay-3" href="#shop">
+          <span class="cat-img"><img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A washed black baseball cap" width="800" height="1000" loading="lazy"></span>
+          <span class="cat-label"><strong>Accessories</strong><span>21 pieces</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products section" id="new">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div><span class="eyebrow">Just landed</span><h2>New in <em>this week.</em></h2></div>
+        <p class="section-note">Eight new pieces, cut in limited numbers. When they are gone, they are gone.</p>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product reveal" data-name="Azure trench coat">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Azure trench coat" width="800" height="1000" loading="lazy">
+            <span class="product-tag">New</span>
+            <button class="quick-add" data-name="Azure trench coat" data-price="189" aria-label="Add Azure trench coat to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>Azure trench coat</h3><span>Outerwear · Cotton</span></div><span class="price">€189</span></div>
+        </article>
+        <article class="product reveal delay-1" data-name="Scarlet crewneck">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Scarlet crewneck" width="800" height="1000" loading="lazy">
+            <span class="product-tag">New</span>
+            <button class="quick-add" data-name="Scarlet crewneck" data-price="79" aria-label="Add Scarlet crewneck to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>Scarlet crewneck</h3><span>Tops · Organic cotton</span></div><span class="price">€79</span></div>
+        </article>
+        <article class="product reveal delay-2" data-name="Floral slip dress">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Floral slip dress" width="800" height="1000" loading="lazy">
+            <span class="product-tag">New</span>
+            <button class="quick-add" data-name="Floral slip dress" data-price="129" aria-label="Add Floral slip dress to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>Floral slip dress</h3><span>Dresses · Viscose</span></div><span class="price">€129</span></div>
+        </article>
+        <article class="product reveal delay-3" data-name="Midnight lace dress">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Midnight lace dress" width="800" height="1000" loading="lazy">
+            <span class="product-tag">New</span>
+            <button class="quick-add" data-name="Midnight lace dress" data-price="159" aria-label="Add Midnight lace dress to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>Midnight lace dress</h3><span>Dresses · Lace</span></div><span class="price">€159</span></div>
+        </article>
+        <article class="product reveal" data-name="Sunbeam two-piece">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Sunbeam two-piece set" width="800" height="1000" loading="lazy">
+            <button class="quick-add" data-name="Sunbeam two-piece" data-price="119" aria-label="Add Sunbeam two-piece to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>Sunbeam two-piece</h3><span>Sets · Linen blend</span></div><span class="price">€119</span></div>
+        </article>
+        <article class="product reveal delay-1" data-name="City tote and shades">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A shopper carrying bags and wearing sunglasses" width="800" height="1000" loading="lazy">
+            <button class="quick-add" data-name="City tote and shades" data-price="95" aria-label="Add City tote and shades to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>City tote &amp; shades</h3><span>Accessories · Leather</span></div><span class="price">€95</span></div>
+        </article>
+        <article class="product reveal delay-2" data-name="The everyday tee">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A black everyday tee" width="800" height="1000" loading="lazy">
+            <button class="quick-add" data-name="The everyday tee" data-price="45" aria-label="Add The everyday tee to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>The everyday tee</h3><span>Tops · Cotton</span></div><span class="price">€45</span></div>
+        </article>
+        <article class="product reveal delay-3" data-name="Suede bomber">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="A tan suede bomber jacket" width="800" height="1000" loading="lazy">
+            <button class="quick-add" data-name="Suede bomber" data-price="210" aria-label="Add Suede bomber to bag"><svg><use href="#i-bag"/></svg></button>
+          </div>
+          <div class="product-body"><div><h3>Suede bomber</h3><span>Outerwear · Suede</span></div><span class="price">€210</span></div>
+        </article>
+      </div>
+      <p class="grid-status" id="gridStatus" role="status"></p>
+    </div>
+  </section>
+
+  <section class="sale">
+    <div class="container sale-inner reveal">
+      <span class="sale-tag">Mid-season sale</span>
+      <h2>Up to <em><span class="sale-num">40%</span> off</em> the last of the season.</h2>
+      <p>Final sizes, final colours, no restocks. Once they are gone, they are properly gone.</p>
+      <a class="btn btn-light" href="#shop">Shop the sale <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+
+  <section class="newsletter" id="newsletter">
+    <div class="container newsletter-inner reveal">
+      <div>
+        <span class="eyebrow">The list</span>
+        <h2>First dibs, every <em>Friday.</em></h2>
+        <p>New pieces, restocks and the occasional studio note. One email a week, no noise.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <label class="sr-only" for="newsletterEmail">Email address</label>
+        <input id="newsletterEmail" type="email" placeholder="Your email address" autocomplete="email">
+        <button class="btn" type="submit">Join the list <svg><use href="#i-arrow"/></svg></button>
+        <p class="newsletter-status" id="newsletterStatus" role="status">Join 12,000 people who get there first.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="bestsellers section" id="shop">
+    <div class="container">
+      <div class="section-head split reveal">
+        <div><span class="eyebrow">The classics</span><h2>Best sellers, <em>always.</em></h2></div>
+        <a class="text-link" href="#new">Shop all <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="product-grid product-grid-4">
+        <article class="product reveal" data-name="Scarlet crewneck">
+          <div class="product-img"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Scarlet crewneck" width="800" height="1000" loading="lazy"><button class="quick-add" data-name="Scarlet crewneck" data-price="79" aria-label="Add Scarlet crewneck to bag"><svg><use href="#i-bag"/></svg></button></div>
+          <div class="product-body"><div><h3>Scarlet crewneck</h3><span>Tops · Organic cotton</span></div><span class="price">€79</span></div>
+        </article>
+        <article class="product reveal delay-1" data-name="Midnight lace dress">
+          <div class="product-img"><img src="https://images.unsplash.com/photo-1551803091-e20673f15770?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Midnight lace dress" width="800" height="1000" loading="lazy"><button class="quick-add" data-name="Midnight lace dress" data-price="159" aria-label="Add Midnight lace dress to bag"><svg><use href="#i-bag"/></svg></button></div>
+          <div class="product-body"><div><h3>Midnight lace dress</h3><span>Dresses · Lace</span></div><span class="price">€159</span></div>
+        </article>
+        <article class="product reveal delay-2" data-name="Suede bomber">
+          <div class="product-img"><img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="Suede bomber" width="800" height="1000" loading="lazy"><button class="quick-add" data-name="Suede bomber" data-price="210" aria-label="Add Suede bomber to bag"><svg><use href="#i-bag"/></svg></button></div>
+          <div class="product-body"><div><h3>Suede bomber</h3><span>Outerwear · Suede</span></div><span class="price">€210</span></div>
+        </article>
+        <article class="product reveal delay-3" data-name="City tote and shades">
+          <div class="product-img"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=800&amp;q=78" alt="City tote and shades" width="800" height="1000" loading="lazy"><button class="quick-add" data-name="City tote and shades" data-price="95" aria-label="Add City tote and shades to bag"><svg><use href="#i-bag"/></svg></button></div>
+          <div class="product-body"><div><h3>City tote &amp; shades</h3><span>Accessories · Leather</span></div><span class="price">€95</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="journal section" id="journal">
+    <div class="container journal-grid">
+      <div class="journal-media reveal">
+        <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="A model in a red sweatshirt against a pale wall" width="1100" height="1300" loading="lazy">
+        <span class="journal-caption">Studio notes · No. 14</span>
+      </div>
+      <div class="journal-copy reveal delay-1" id="about">
+        <span class="eyebrow">The journal</span>
+        <h2>Fewer, better, <em>worn often.</em></h2>
+        <p>We design eight pieces a season, not eighty. Each one is sampled, worn, washed and worn again before it goes into production. If it does not earn its place in a suitcase, it does not get made.</p>
+        <p>Our studio is in Amsterdam Noord. The fabric mill is in Portugal, the knitters are in Italy, and the patterns are cut two streets from here.</p>
+        <a class="btn btn-outline" href="#newsletter">Read the journal</a>
+        <div class="journal-stats">
+          <div><strong>8</strong><span>pieces a season</span></div>
+          <div><strong>3</strong><span>family-run mills</span></div>
+          <div><strong>0</strong><span>seasonal waste</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Kind words</span>
+        <h2>Worn, washed, <em>loved.</em></h2>
+      </div>
+      <div class="review-grid">
+        <article class="review-card reveal">
+          <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>“The trench is the first coat I have owned that looks better creased. I have worn it every day since it arrived.”</p>
+          <div class="review-person"><strong>Lotte M.</strong><span>Amsterdam · Azure trench coat</span></div>
+        </article>
+        <article class="review-card reveal delay-1">
+          <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>“Ordered on Thursday, wore it to a wedding on Saturday. The fit was exactly as the size guide promised.”</p>
+          <div class="review-person"><strong>Amara K.</strong><span>Rotterdam · Midnight lace dress</span></div>
+        </article>
+        <article class="review-card reveal delay-2">
+          <div class="stars" aria-label="5 out of 5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <p>“Finally a brand that does not make me choose between looking good and feeling comfortable. The tee is perfect.”</p>
+          <div class="review-person"><strong>Nina D.</strong><span>Utrecht · The everyday tee</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <a class="logo logo-light" href="#top">CRISP<span class="logo-dot"></span></a>
+      <p>Independent fashion from Amsterdam. Eight pieces a season, made to be worn often and kept for years.</p>
+      <div class="socials"><a href="#top" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a><a href="#top" aria-label="TikTok"><svg><use href="#i-tiktok"/></svg></a><a href="#top" aria-label="Pinterest"><svg><use href="#i-pinterest"/></svg></a></div>
+    </div>
+    <div class="footer-col"><h3>Shop</h3><a href="#new">New in</a><a href="#collections">Dresses</a><a href="#collections">Outerwear</a><a href="#shop">Best sellers</a></div>
+    <div class="footer-col"><h3>Help</h3><a href="#newsletter">Size guide</a><a href="#newsletter">Shipping &amp; returns</a><a href="#newsletter">Care guide</a><a href="#newsletter">Contact</a></div>
+    <div class="footer-col footer-contact"><h3>Studio</h3><p>Papaverweg 12<br>1032 KJ Amsterdam</p><a href="mailto:hello@crisp.studio">hello@crisp.studio</a><a href="tel:+31205550129">+31 20 555 0129</a></div>
+    <a class="btn btn-light footer-cta" href="#new">Shop new in</a>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> Crisp Studio</span>
+    <span>Free shipping over €75 · 30-day returns</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
