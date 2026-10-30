@@ -125,7 +125,7 @@ p { margin: 0; }
 }
 .hero-inner { position: relative; text-align: center; }
 .hero-sticker {
-  position: absolute; top: -26px; left: 50%;
+  position: absolute; top: -46px; left: 50%;
   transform: translateX(calc(-50% - clamp(118px, 17vw, 292px))) rotate(-9deg);
   z-index: 3;
   color: var(--red);
@@ -137,7 +137,7 @@ p { margin: 0; }
   content: "Awesome!";
   position: absolute; inset: 0; z-index: -1;
   color: transparent;
-  -webkit-text-stroke: clamp(9px, 1.1vw, 16px) #fff;
+  -webkit-text-stroke: clamp(14px, 1.7vw, 24px) #fff;
   paint-order: stroke fill;
 }
 .hero-year-row {
@@ -558,7 +558,7 @@ p { margin: 0; }
   .brand-mark { width: 32px; height: 32px; }
   .hero { padding: 66px 0 60px; }
   .hero-sticker { top: -6px; left: calc(50% + 4px); transform: translateX(calc(-50% - 102px)) rotate(-9deg); font-size: 46px; }
-  .hero-sticker::before { -webkit-text-stroke-width: 9px; }
+  .hero-sticker::before { -webkit-text-stroke-width: 16px; }
   .hero-year { font-size: clamp(104px, 30vw, 150px); }
   .hero-pill { padding: 6px 13px; font-size: 12px; margin-top: 20px; }
   .hero-name { margin-top: 14px; font-size: clamp(28px, 9vw, 40px); }

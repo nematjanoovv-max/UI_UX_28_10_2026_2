@@ -83,15 +83,35 @@ main branch'ga push bo'lishi bilan o'sha sayt avtomatik qayta deploy bo'ladi.
    Sayt   : https://crisp-2810.vercel.app
    Figma  : https://www.figma.com/file/pyriaNMaPDrvmzSicUinkm/Crisp
 
-------------------------------------------------------------------
-  NAVBATDAGI SAYTLAR
-------------------------------------------------------------------
+13) Dlex — mobil UI kit / dizayn tizimi
+   Papka  : 13_dlex
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/13_dlex
+   Sayt   : https://dlex-2810.vercel.app
+   Figma  : https://www.figma.com/file/MQhHg9TqNJspRKL18hPyLC/Dlex
 
-13) Dlex — mobil UI kit
-14) Misterbyt — portfolio
-15) UMS-F — universitet tizimi
-16) PrimeCRM — CRM platforma
-17) Landing Page Kits — landing to'plami
+14) Misterbyt — maishiy texnika ta'mirlash xizmati
+   Papka  : 14_misterbyt
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/14_misterbyt
+   Sayt   : https://misterbyt-2810.vercel.app
+   Figma  : https://www.figma.com/file/ve4eHZPN6PH6Bo5aGOfgY6/misterbyt
+
+15) UMS-F — bolalar uyqu budilnikining sharhlar sahifasi
+   Papka  : 15_umsf
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/15_umsf
+   Sayt   : https://umsf-2810.vercel.app
+   Figma  : https://www.figma.com/file/qZC4dXbm8KLKyd0h7ftI3v/UMS-F-(Copy)
+
+16) PrimeCRM — CRM SaaS platformasi
+   Papka  : 16_primecrm
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/16_primecrm
+   Sayt   : https://primecrm-2810.vercel.app
+   Figma  : https://www.figma.com/file/YYhjgvRIPOm071Qi8NGyTU/PrimeCRM
+
+17) Landing Page Kits — landing sahifalar to'plami
+   Papka  : 17_landing_kits
+   GitHub : https://github.com/nematjanoovv-max/UI_UX_28_10_2026_2/tree/main/17_landing_kits
+   Sayt   : https://landing-kits-2810.vercel.app
+   Figma  : https://www.figma.com/file/vQaUY7pL5oncokMwk8m1bj/Landing-Page-Kits-V1-(Community)
 
 ------------------------------------------------------------------
   TEXNIK IZOH
