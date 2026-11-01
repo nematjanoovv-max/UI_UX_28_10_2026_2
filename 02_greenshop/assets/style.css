@@ -1,18 +1,18 @@
 /* GreenShop — 02 */
 :root{
-  --green:#1f5a3d;
-  --green-deep:#173f2b;
-  --green-2:#347a53;
-  --mint:#dcefd7;
-  --lime:#c9e6a4;
-  --cream:#f7f3e9;
-  --paper:#fffdf7;
+  --green:#46a358;
+  --green-deep:#357b43;
+  --green-2:#2d6a3b;
+  --mint:#e8f5ec;
+  --lime:#86d97b;
+  --cream:#fafafa;
+  --paper:#ffffff;
   --clay:#d97a4c;
-  --ink:#17251c;
-  --muted:#697565;
-  --line:#e2ddce;
-  --shadow:0 24px 60px -30px rgba(31,60,40,.35);
-  --radius:22px;
+  --ink:#3d3d3d;
+  --muted:#727272;
+  --line:#ececec;
+  --shadow:0 20px 48px -20px rgba(70,163,88,.22);
+  --radius:16px;
   --container:1220px;
 }
 *,*::before,*::after{box-sizing:border-box}
