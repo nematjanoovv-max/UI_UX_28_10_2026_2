@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX 28.10.2026 — 17 Figma Loyihalari Portali</title>
+  <meta name="description" content="Figma dizaynlari asosida yaratilgan 17 ta zamonaviy statik veb-saytlar to'plami.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(18, 24, 39, 0.85);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover-border: rgba(99, 102, 241, 0.5);
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --primary: #6366f1;
+      --primary-hover: #4f46e5;
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.2);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 2.5rem 1.25rem 4rem;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(16, 185, 129, 0.08) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.9rem;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #34d399;
+      margin-bottom: 1rem;
+    }
+    .badge .dot {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #10b981;
+    }
+    h1 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+    .search-wrapper {
+      max-width: 440px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .search-input {
+      width: 100%;
+      padding: 0.8rem 1.25rem 0.8rem 2.85rem;
+      background: rgba(18, 24, 39, 0.7);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 0.95rem;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+    }
+    .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+      width: 18px;
+      height: 18px;
+    }
+    .stats-bar {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .stats-bar strong {
+      color: #fff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--card-hover-border);
+      box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.15);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+    }
+    .site-number {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(99, 102, 241, 0.15);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 0.5rem;
+    }
+    .card-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      flex-grow: 1;
+      margin-bottom: 1.25rem;
+    }
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: auto;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.55rem 0.95rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      flex-grow: 1;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+      border: 1px solid var(--card-border);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--card-border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="badge">
+      <span class="dot"></span> 17 / 17 Sayt Tayyor & Jonli
+    </div>
+    <h1>UI/UX Figma Saytlar Portali</h1>
+    <p class="subtitle">Figma dizaynlari asosida yaratilgan to'liq responsiv, zamonaviy statik veb-saytlar to'plami.</p>
+    
+    <div class="search-wrapper">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="searchInput" class="search-input" placeholder="Sayt nomi yoki toifasi bo'yicha qidirish...">
+    </div>
+
+    <div class="stats-bar">
+      <div>Jami: <strong>17 ta loyiha</strong></div>
+      <div>Deploy: <strong>Vercel (Avto)</strong></div>
+      <div>Holat: <strong style="color: #34d399;">100% 200 OK</strong></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid" id="sitesGrid">
+
+      <!-- 1 -->
+      <article class="card" data-title="cleaning x uy tozalash xizmati">
+        <div class="card-header">
+          <span class="site-number">01</span>
+        </div>
+        <h2 class="card-title">Cleaning X</h2>
+        <p class="card-desc">Uy va ofislarni professional tozalash xizmati uchun landing sahifa.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://cleaning-x-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./01_cleaning_x/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/Kdy7qTpYyWzvwBIuSGulqt/Cleaning-X" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card" data-title="greenshop o'simliklar gul do'koni e-commerce">
+        <div class="card-header">
+          <span class="site-number">02</span>
+        </div>
+        <h2 class="card-title">GreenShop</h2>
+        <p class="card-desc">Xona o'simliklari va gullar onlayn do'koni (e-commerce storefront).</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://greenshop-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./02_greenshop/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/BeJ7F91dnIOSwVdvcRwMqn/GreenShop-(Copy)" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card" data-title="swipe fintech biznes moliya to'lovlar">
+        <div class="card-header">
+          <span class="site-number">03</span>
+        </div>
+        <h2 class="card-title">Swipe</h2>
+        <p class="card-desc">Fintech platformasi, biznes to'lovlari va hisob-kitoblarni boshqarish tizimi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://swipe-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./03_swipe/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/RKq2ORzZcFhfG7g9NYuWhk/Swipe" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card" data-title="nova arxitektura dizayn studiyasi">
+        <div class="card-header">
+          <span class="site-number">04</span>
+        </div>
+        <h2 class="card-title">Nova</h2>
+        <p class="card-desc">Zamonaviy arxitektura va interyer dizayn studiyasi portfeli.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://nova-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./04_nova/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/L2f6Ex8oLNYwqS5R7IY9C2/Nova" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card" data-title="zero design ui kit dizayn tizimi">
+        <div class="card-header">
+          <span class="site-number">05</span>
+        </div>
+        <h2 class="card-title">Zero Design</h2>
+        <p class="card-desc">Ijodkorlar uchun zamonaviy UI kit va dizayn tizimi sahifasi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://zero-design-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./05_zero_design/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/B40CJceRjgB0PNo9F08ggO/Zero-Design" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card" data-title="roger haus foto portfolio art director">
+        <div class="card-header">
+          <span class="site-number">06</span>
+        </div>
+        <h2 class="card-title">Roger Haus</h2>
+        <p class="card-desc">Illustrator va art-direktorning minimalist shaxsiy portfeli.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://roger-haus-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./06_roger_haus/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/OPWShg4RkQ8vZRclaKpegG/Roger-Haus" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card" data-title="rayal park mehmonxona dam olish maskani">
+        <div class="card-header">
+          <span class="site-number">07</span>
+        </div>
+        <h2 class="card-title">Rayal Park</h2>
+        <p class="card-desc">Premium mehmonxona, xona band qilish va servis xizmatlari.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://rayal-park-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./07_rayal_park/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/jU6hE2yFj26oArs231Ud0d/Rayal-Park" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card" data-title="finsweet agency raqamli agentlik marketing">
+        <div class="card-header">
+          <span class="site-number">08</span>
+        </div>
+        <h2 class="card-title">Finsweet Agency</h2>
+        <p class="card-desc">Brendlar uchun data-driven raqamli marketing va dizayn agentligi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://finsweet-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./08_finsweet/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/JF1wS8Bw0GQUovvsPrnXSd/Finsweet-Agency" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card" data-title="organick organik toza oziq-ovqat yetkazib berish">
+        <div class="card-header">
+          <span class="site-number">09</span>
+        </div>
+        <h2 class="card-title">Organick</h2>
+        <p class="card-desc">Fermadan to'g'ridan-to'g'ri yangi, organik oziq-ovqat mahsulotlari do'koni.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://organick-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./09_organick/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/SKwG2RDjz3fWi9dq74I8zo/Organick" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="card" data-title="bank hotel lyuks mehmonxona amsterdam">
+        <div class="card-header">
+          <span class="site-number">10</span>
+        </div>
+        <h2 class="card-title">Bank Hotel</h2>
+        <p class="card-desc">Tarixiy me'morchilik va lyuks qulayliklarga ega premium mehmonxona.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://bank-hotel-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./10_bank_hotel/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/1SK5lQXbXfy8hXnJTn3yEk/Bank-Hotel" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="card" data-title="beautyness go'zallik saloni spa amsterdam">
+        <div class="card-header">
+          <span class="site-number">11</span>
+        </div>
+        <h2 class="card-title">Beautyness</h2>
+        <p class="card-desc">Go'zallik va salomatlik saloni, massaj va spa xizmatlari.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://beautyness-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./11_beautyness/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/sTIUeZ2TNdOwQXdwUGKjNb/Beautyness" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="card" data-title="crisp moda kiyim-kechak do'koni fashion">
+        <div class="card-header">
+          <span class="site-number">12</span>
+        </div>
+        <h2 class="card-title">Crisp</h2>
+        <p class="card-desc">Zamonaviy kiyim-kechak va moda brendining onlayn savdo vitrinasi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://crisp-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./12_crisp/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/pyriaNMaPDrvmzSicUinkm/Crisp" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="card" data-title="dlex mobil ui kit dizayn tizimi ilova">
+        <div class="card-header">
+          <span class="site-number">13</span>
+        </div>
+        <h2 class="card-title">Dlex</h2>
+        <p class="card-desc">Mobil ilovalar uchun komponentlar va professional dizayn tizimi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://dlex-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./13_dlex/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/MQhHg9TqNJspRKL18hPyLC/Dlex" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="card" data-title="misterbyt maishiy texnika ta'mirlash servis xizmati">
+        <div class="card-header">
+          <span class="site-number">14</span>
+        </div>
+        <h2 class="card-title">Misterbyt</h2>
+        <p class="card-desc">Uy maishiy texnikalarini tezkor va kafolatli ta'mirlash xizmati.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://misterbyt-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./14_misterbyt/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/ve4eHZPN6PH6Bo5aGOfgY6/misterbyt" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="card" data-title="ums-f umsf bolalar budilniki sharhlar">
+        <div class="card-header">
+          <span class="site-number">15</span>
+        </div>
+        <h2 class="card-title">UMS-F</h2>
+        <p class="card-desc">Bolalar uyqu budilnigi foydalanuvchilarining batafsil sharhlari sahifasi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://umsf-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./15_umsf/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/qZC4dXbm8KLKyd0h7ftI3v/UMS-F-(Copy)" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="card" data-title="primecrm crm saas platforma biznes boshqaruv">
+        <div class="card-header">
+          <span class="site-number">16</span>
+        </div>
+        <h2 class="card-title">PrimeCRM</h2>
+        <p class="card-desc">Savdo va mijozlar munosabatlarini boshqaruvchi zamonaviy CRM platformasi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://primecrm-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./16_primecrm/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/YYhjgvRIPOm071Qi8NGyTU/PrimeCRM" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="card" data-title="landing page kits to'plam 120+ sektsiya">
+        <div class="card-header">
+          <span class="site-number">17</span>
+        </div>
+        <h2 class="card-title">Landing Page Kits</h2>
+        <p class="card-desc">120+ tayyor bo'limlar va sahifalar to'plamidan iborat dizayn kutubxonasi.</p>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://landing-kits-2810.vercel.app" target="_blank" rel="noopener">Demo ↗</a>
+          <a class="btn btn-secondary" href="./17_landing_kits/">Papka</a>
+          <a class="btn btn-secondary" href="https://www.figma.com/file/vQaUY7pL5oncokMwk8m1bj/Landing-Page-Kits-V1-(Community)" target="_blank" rel="noopener">Figma</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 UI/UX Portfolio. Barcha 17 sayt muvaffaqiyatli Vercel'da ishlamoqda.</p>
+  </footer>
+</div>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const cards = document.querySelectorAll('.card');
+
+  searchInput.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase().trim();
+    cards.forEach(card => {
+      const title = card.getAttribute('data-title') || '';
+      if (!term || title.includes(term)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
+</body>
+</html>
