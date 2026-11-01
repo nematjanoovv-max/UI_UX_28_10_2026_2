@@ -1,24 +1,24 @@
 /* Cleaning X — 01 */
 :root{
-  --blue:#0b6bf2;
-  --blue-dark:#0554c7;
-  --blue-soft:#eaf2ff;
-  --sky:#f5f9ff;
+  --blue:#0075ff;
+  --blue-dark:#005be3;
+  --blue-soft:#edf5ff;
+  --sky:#f7faff;
   --ink:#141a33;
-  --navy:#12162f;
-  --muted:#65708c;
-  --line:#e3ebf7;
+  --navy:#0f172a;
+  --muted:#5f6d89;
+  --line:#e2e9f3;
   --white:#fff;
-  --mint:#2fa36b;
-  --mint-soft:#e6f7ee;
-  --amber:#ffb703;
-  --shadow:0 24px 60px -28px rgba(20,45,100,.28);
+  --mint:#00c48c;
+  --mint-soft:#e6f9f3;
+  --amber:#ffb800;
+  --shadow:0 24px 60px -28px rgba(0,117,255,.2);
   --radius:24px;
   --container:1200px;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.6}
+body{margin:0;font-family:"Plus Jakarta Sans","Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased;line-height:1.6}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -232,6 +232,21 @@ svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke
 .post h3{font-size:21px;line-height:1.35;letter-spacing:-.02em;margin-bottom:9px}
 .post h3 a:hover{color:var(--blue)}
 .post p{font-size:14px;color:var(--muted);margin-bottom:16px}
+
+/* faq */
+.faq{background:#fff;border-top:1px solid #e8f1fc}
+.faq-list{max-width:820px;margin:0 auto;display:grid;gap:16px}
+.faq-item{background:#f8fbff;border:1px solid #e3edf9;border-radius:18px;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.faq-item:hover{border-color:#b9d5fc;box-shadow:0 8px 24px -12px rgba(0,117,255,.15)}
+.faq-item summary{list-style:none;padding:22px 28px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:18px;font-weight:700;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary h3{font-size:17px;letter-spacing:-.02em;margin:0;color:var(--ink)}
+.faq-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid #dce8f8;color:var(--blue);flex-shrink:0;transition:transform .3s,background .2s,color .2s}
+.faq-icon svg{width:16px;height:16px;transform:rotate(90deg);transition:transform .3s}
+.faq-item[open] .faq-icon{background:var(--blue);color:#fff;border-color:var(--blue)}
+.faq-item[open] .faq-icon svg{transform:rotate(-90deg)}
+.faq-answer{padding:0 28px 22px;color:var(--muted);font-size:15px;line-height:1.65}
+.faq-answer p{margin:0}
 
 /* quote */
 .quote{background:linear-gradient(160deg,#f6faff,#edf5ff)}

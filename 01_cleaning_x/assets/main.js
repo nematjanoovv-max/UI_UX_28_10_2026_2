@@ -132,6 +132,17 @@
     newsForm.reset();
   });
 
+  const serviceButtons = document.querySelectorAll(".card-foot a[data-service]");
+  serviceButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const sName = btn.getAttribute("data-service");
+      const serviceSelect = document.querySelector('select[name="service"]');
+      if (serviceSelect && sName) {
+        serviceSelect.value = sName;
+      }
+    });
+  });
+
   const sections = Array.from(document.querySelectorAll("main section[id]"));
   const navLinks = Array.from(document.querySelectorAll(".nav a"));
   if ("IntersectionObserver" in window) {
